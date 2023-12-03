@@ -19,11 +19,11 @@ void Main(void);   // C++ function
 int main(void)
 {
 
-  SystemCoreClockUpdate();																//
+  SystemCoreClockUpdate();															//
 	SysTick_Config(SystemCoreClock/1000);										//
-  printf("System Clock =%u Hz \r\n",SystemCoreClock);			//Debug print
+  printf("System Clock =%u Hz \r\n",SystemCoreClock);					//Debug print
 	
-	Main();																									//main function from AppMain.cpp
+	Main();																					//main function
 	
 	while(1)
 	{
