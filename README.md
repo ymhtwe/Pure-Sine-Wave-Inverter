@@ -1,2 +1,7 @@
 # Pure-Sine-Wave-Inverter
- inverter project using stm32f
+
+/*
+Pure Sine Wave Inverter Using STM32F103C8T6
+Version : 01 revision 1
+
+*/
