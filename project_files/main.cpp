@@ -8,19 +8,15 @@ Version: 01 revision 1
 //
 
 
-#include "stm32f10x.h"                  // Device header
-#include <stdio.h>
-#include <stdbool.h>
+#include "AppMain.h"
 
 
-
-void Main(void);   // C++ function
 
 int main(void)
 {
 
   SystemCoreClockUpdate();															//
-	SysTick_Config(SystemCoreClock/1000);										//
+  SysTick_Config(SystemCoreClock/1000);										//
   printf("System Clock =%u Hz \r\n",SystemCoreClock);					//Debug print
 	
 	Main();																					//main function

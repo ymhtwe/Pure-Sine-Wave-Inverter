@@ -394,6 +394,11 @@
               <FileType>8</FileType>
               <FilePath>.\main.cpp</FilePath>
             </File>
+            <File>
+              <FileName>AppMain.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\AppMain.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -6,42 +6,25 @@
 			PWM frequency = 64*50= 3200 Hz
 */
 
-#include "stm32f10x.h"                  // Device header
-#include <stdio.h>
-#include <math.h>
-#include <string.h>
+#include "AppMain.h"
 
-#define PWM_MODE1   (6)
-#define PWM_MODE2   (7)
-#define DUTY        (80)
-#ifdef DEBUG
- #define debug_print(x,...) fprintf( stderr,x,__VA_ARGS__);
-#else
- #define debug_print(x,...)
-#endif
-void TIM2_Init(void);
-void TIM3_Init(void);
-void TIM4_Init(void);
-void GPIO_Init(void);
-void init_timer(TIM_TypeDef *timer);
-void DMA1_Init(void);
-void DMA1_Channel5_Init(void);
-void DMA1_Channel7_Init(void);
 
 #define SIZE 200
 uint16_t SineTable[SIZE];
 uint16_t OutputTable[SIZE*3];
 uint16_t output;
 
-int Main()
+
+void Main()
 {
+	//generate sine table 
 	for(int i=0;i<SIZE;i++)
 	{
 		 SineTable[i]= 3600*sin(3.1415926*i/SIZE);
 	}
 	 memset(OutputTable,0,SIZE*6);
 	 memcpy(OutputTable,SineTable,SIZE*2);
-   memcpy(&OutputTable[400],SineTable,SIZE*2);
+     memcpy(&OutputTable[400],SineTable,SIZE*2);
 	
 	 GPIO_Init();
 	// DMA1_Init();
