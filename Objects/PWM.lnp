@@ -1,0 +1,10 @@
+--cpu Cortex-M3
+".\objects\appmain5.o"
+".\objects\main.o"
+".\objects\retarget_io.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\PWM.map" -o .\Objects\PWM.axf
