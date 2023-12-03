@@ -1,0 +1,12 @@
+1. copy global.prop and global.prop.def files for your respective keil version and paste it to
+   respective project directory.
+
+   example for KeilV5, paste to this directory ....
+   C/Keil-V5/UV4 
+
+2. restart the ide and dark theme will appear automatically
+
+
+
+
+
