@@ -6,9 +6,10 @@ Version: 01 revision 1
 
 //
 //
+//**************************************************************
 
+#include "main.h"
 
-#include "AppMain.h"
 
 
 
